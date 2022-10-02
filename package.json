@@ -20,7 +20,6 @@
     "@angular/platform-browser-dynamic": "~13.3.11",
     "@angular/router": "~13.3.11",
     "@auth0/angular-jwt": "^5.0.2",
-    "ngx-mask": "^14.2.3",
     "ngx-toastr": "^13.2.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
@@ -28,7 +27,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.9",
-    "@angular/cli": "~13.3.9",
+    "@angular/cli": "^14.2.4",
     "@angular/compiler-cli": "~13.3.11",
     "@types/node": "^12.11.1",
     "typescript": "~4.6.4"
