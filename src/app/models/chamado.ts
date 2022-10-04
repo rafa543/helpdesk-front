@@ -1,6 +1,6 @@
 export interface Chamado {
     id?: any;
-    dataabertur?: string;
+    dataAbertura?: string;
     dataFechamento?: string;
     prioridade: string;
     status: string;
