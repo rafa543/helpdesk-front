@@ -1,15 +1,14 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { API_CONFIG } from '../config/api.config';
-import { Cliente } from '../models/cliente';
+import { HttpClient } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
+import { API_CONFIG } from "../config/api.config";
+import { Cliente } from "../models/cliente";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class ClienteService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   findById(id: any): Observable<Cliente> {
     return this.http.get<Cliente>(`${API_CONFIG.baseUrl}/clientes/${id}`);
@@ -24,7 +23,10 @@ export class ClienteService {
   }
 
   update(cliente: Cliente): Observable<Cliente> {
-    return this.http.put<Cliente>(`${API_CONFIG.baseUrl}/clientes/${cliente.id}`, cliente);
+    return this.http.put<Cliente>(
+      `${API_CONFIG.baseUrl}/clientes/${cliente.id}`,
+      cliente
+    );
   }
 
   delete(id: any): Observable<Cliente> {
